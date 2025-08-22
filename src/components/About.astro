@@ -1,0 +1,191 @@
+---
+import { Card } from './ui/card'
+---
+
+<section id="about" class="py-20 px-6" ref={sectionRef}>
+  <div class="max-w-6xl mx-auto">
+    <div
+      class={`transition-all duration-1000 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
+      {/* Section Header */}
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          <span class="text-primary">About</span> Me
+        </h2>
+        <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+      </div>
+
+      {/* About Sections */}
+      <div class="space-y-16">
+        {/* My Journey */}
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1">
+            <Card className="surface-elevated p-8 rounded-2xl border-border/30">
+              <div
+                class="aspect-square bg-gradient-surface rounded-xl flex items-center justify-center"
+              >
+                <div class="text-6xl">👨‍💻</div>
+              </div>
+            </Card>
+          </div>
+
+          <div class="order-1 md:order-2 space-y-6">
+            <h3 class="text-2xl font-bold text-primary mb-4">My Journey</h3>
+            <div class="space-y-4 text-secondary leading-relaxed">
+              <p>
+                My journey began with a fascination for problem-solving and has
+                evolved into a career dedicated to creating meaningful digital
+                experiences. Starting as a self-taught programmer, I've grown
+                through continuous learning and hands-on experience.
+              </p>
+              <p>
+                Over 5 years of building scalable web applications and mobile
+                solutions, I've worked with startups and established companies,
+                always focusing on delivering solutions that make a real impact.
+              </p>
+            </div>
+
+            {/* Stats */}
+            <div class="grid grid-cols-3 gap-6 pt-6">
+              {
+                [
+                  { number: '50+', label: 'Projects Completed' },
+                  { number: '5+', label: 'Years Experience' },
+                  { number: '20+', label: 'Technologies Mastered' },
+                ].map((stat, index) => (
+                  <div class="text-center">
+                    <div class="text-2xl md:text-3xl font-bold text-primary mb-2">
+                      {stat.number}
+                    </div>
+                    <div class="text-sm text-muted">{stat.label}</div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+
+        {/* Personal Philosophy */}
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold text-primary mb-4">
+              Personal Philosophy
+            </h3>
+            <div class="space-y-4 text-secondary leading-relaxed">
+              <p>
+                Inspired by Japanese design principles of simplicity and
+                functionality, I believe in writing clean, maintainable code
+                that stands the test of time.
+              </p>
+              <p>
+                My approach centers on <span class="text-primary font-semibold"
+                  >minimalism</span
+                >,
+                <span class="text-primary font-semibold">
+                  attention to detail</span
+                >, and
+                <span class="text-primary font-semibold">
+                  continuous improvement</span
+                > - the essence of kaizen in software development.
+              </p>
+            </div>
+          </div>
+          <Card className="surface-elevated p-8 rounded-2xl border-border/30">
+            <div class="text-center space-y-4">
+              <div class="text-4xl">🎯</div>
+              <h4 class="text-xl font-semibold text-primary">Core Values</h4>
+              <div class="space-y-3 text-sm">
+                <div class="flex items-center justify-center space-x-2">
+                  <span class="w-2 h-2 bg-primary rounded-full"></span>
+                  <span class="text-secondary">Quality over Quantity</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                  <span class="w-2 h-2 bg-primary rounded-full"></span>
+                  <span class="text-secondary">Continuous Learning</span>
+                </div>
+                <div class="flex items-center justify-center space-x-2">
+                  <span class="w-2 h-2 bg-primary rounded-full"></span>
+                  <span class="text-secondary">User-Centric Design</span>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Education & Interests */}
+        <div class="grid md:grid-cols-2 gap-12">
+          {/* Education */}
+          <Card className="surface-elevated p-8 rounded-2xl border-border/30">
+            <h3 class="text-2xl font-bold text-primary mb-6">Education</h3>
+            <div class="space-y-6">
+              <div class="space-y-2">
+                <h4 class="font-semibold text-secondary">
+                  Bachelor of Computer Science
+                </h4>
+                <p class="text-muted text-sm">
+                  Tokyo Institute of Technology • 2018
+                </p>
+                <p class="text-secondary text-sm">
+                  Focus: Software Engineering & AI
+                </p>
+              </div>
+              <div class="space-y-2">
+                <h4 class="font-semibold text-secondary">Certifications</h4>
+                <ul class="space-y-1 text-sm text-muted">
+                  <li>• AWS Solutions Architect</li>
+                  <li>• Google Cloud Professional</li>
+                  <li>• React Advanced Certification</li>
+                </ul>
+              </div>
+            </div>
+          </Card>
+
+          {/* Interests & Hobbies */}
+          <Card className="surface-elevated p-8 rounded-2xl border-border/30">
+            <h3 class="text-2xl font-bold text-primary mb-6">
+              Interests & Hobbies
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl">🥋</span>
+                <div>
+                  <p class="font-medium text-secondary">Martial Arts</p>
+                  <p class="text-sm text-muted">Aikido & Kendo practitioner</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl">🇯🇵</span>
+                <div>
+                  <p class="font-medium text-secondary">Japanese Language</p>
+                  <p class="text-sm text-muted">JLPT N2 certified</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl">🤖</span>
+                <div>
+                  <p class="font-medium text-secondary">
+                    AI & Machine Learning
+                  </p>
+                  <p class="text-sm text-muted">
+                    Exploring latest developments
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-2xl">📸</span>
+                <div>
+                  <p class="font-medium text-secondary">Photography</p>
+                  <p class="text-sm text-muted">
+                    Street & landscape photography
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
