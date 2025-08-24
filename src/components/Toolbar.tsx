@@ -45,7 +45,7 @@ export const Toolbar = () => {
         <div className="flex items-center space-x-6">
           <button
             onClick={() => scrollToSection('#home')}
-            className="text-xl font-bold text-primary hover:scale-110 transition-transform flex-shrink-0"
+            className="text-xl font-bold text-primary hover:scale-110 transition-transform flex-shrink-0 cursor-pointer"
           >
             Nacho
           </button>
@@ -55,7 +55,7 @@ export const Toolbar = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="text-sm text-white hover:text-primary transition-colors relative group py-2 px-3 rounded-full hover:bg-secondary/30"
+                className="text-sm text-white hover:text-primary transition-colors relative group py-2 px-3 rounded-full hover:bg-secondary/30 cursor-pointer"
               >
                 {item.label}
                 <span className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-8" />
@@ -66,7 +66,7 @@ export const Toolbar = () => {
           <Button
             onClick={() => scrollToSection('#contact')}
             size="sm"
-            className="gradient-primary rounded-full hover:scale-105 transition-all duration-300 hidden md:flex"
+            className="gradient-primary rounded-full hover:scale-105 transition-all duration-300 hidden md:flex cursor-pointer"
           >
             Hire Me
           </Button>

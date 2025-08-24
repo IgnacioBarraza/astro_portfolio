@@ -1,0 +1,164 @@
+---
+import { Badge } from './ui/badge'
+import { Card } from './ui/card'
+
+const skillCategories = [
+  {
+    title: 'Frontend',
+    skills: [
+      'Angular',
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Tailwind CSS',
+      'Bootstrap',
+      'Astro',
+    ],
+  },
+  {
+    title: 'Backend',
+    skills: [
+      'Node.js',
+      'TypeORM',
+      'Express',
+      'Firebase',
+      'PostgreSQL',
+      'MongoDB',
+    ],
+  },
+  {
+    title: 'Tools & DevOps',
+    skills: ['Git', 'Jest', 'Figma', 'Linux', 'Docker', 'CI/CD', 'Nginx'],
+  },
+  {
+    title: 'Programming Languages',
+    skills: ['C#', 'C/C++', 'Javascript', 'TypeScript', 'Java', 'Python'],
+  },
+]
+
+const highligths = [
+  {
+    title: 'Problem Solving',
+    description:
+      'Analytical thinking and creative solutions to complex technical challenges',
+    icon: '🧩',
+  },
+  {
+    title: 'Quick Adaptability',
+    description:
+      'Ability to quickly integrate into new teams and adapt to different workflows and environments',
+    icon: '⚡',
+  },
+  {
+    title: 'Continuous Learning',
+    description:
+      'Always staying updated with the latest technologies and best practices',
+    icon: '📚',
+  },
+]
+---
+
+<section
+  id="skills"
+  class="py-20 px-6 bg-cover bg-center bg-no-repeat relative"
+>
+  <div class="max-w-6xl mx-auto">
+    <div
+      id="skills-content"
+      class="opacity-0 translate-y-10 transition-all duration-1000"
+    >
+      {/* Section Header */}
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          <span class="text-primary">Skills</span> & Technologies
+        </h2>
+        <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        <p class="text-secondary-foreground mt-6 max-w-2xl mx-auto">
+          A comprehensive toolkit built through years of hands-on experience and
+          continuous learning in the ever-evolving tech landscape.
+        </p>
+      </div>
+
+      {/* Skills Grid */}
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {
+          skillCategories.map((category, categoryIndex) => (
+            <Card
+              key={category.title}
+              className="skill-card surface-elevated p-6 rounded-xl border-border/30 hover:border-primary/30 transition-all duration-700 opacity-0 translate-y-6"
+              style={{ transitionDelay: `${categoryIndex * 0.2}s` }}
+            >
+              <h3 class="text-xl font-semibold text-primary mb-4">
+                {category.title}
+              </h3>
+              <div class="space-y-3">
+                {category.skills.map((skill, skillIndex) => (
+                  <Badge
+                    key={skill}
+                    variant="secondary"
+                    className="skill-badge w-full justify-start py-2 px-3 bg-muted/50 hover:bg-muted text-foreground border-border/30 transition-all duration-500 opacity-0 translate-y-4"
+                    style={{
+                      transitionDelay: `${categoryIndex * 0.2 + skillIndex * 0.1}s`,
+                    }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </Card>
+          ))
+        }
+      </div>
+
+      {/* Experience Highlights */}
+      <div class="mt-16 grid md:grid-cols-3 gap-8">
+        {
+          highligths.map((highlight, index) => (
+            <Card
+              key={highlight.title}
+              className="highlight-card surface-elevated p-6 rounded-xl border-border/30 text-center hover:border-primary/30 transition-all duration-700 opacity-0 translate-y-6"
+              style={{ animationDelay: `${0.8 + index * 0.2}s` }}
+            >
+              <div class="text-4xl mb-4">{highlight.icon}</div>
+              <h3 class="text-lg font-semibold text-primary mb-2">
+                {highlight.title}
+              </h3>
+              <p class="text-secondary-foreground text-sm leading-relaxed">
+                {highlight.description}
+              </p>
+            </Card>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const section = document.getElementById('skills-content')
+    const cards = document.querySelectorAll(
+      '.skill-card, .highlight-card, .skill-badge'
+    )
+
+    if (section) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              section.classList.remove('opacity-0', 'translate-y-10')
+              section.classList.add('opacity-100', 'translate-y-0')
+
+              cards.forEach((el) => {
+                el.classList.remove('opacity-0', 'translate-y-6')
+                el.classList.add('opacity-100', 'translate-y-0')
+              })
+            }
+          })
+        },
+        { threshold: 0.1 }
+      )
+      observer.observe(section)
+    }
+  })
+</script>

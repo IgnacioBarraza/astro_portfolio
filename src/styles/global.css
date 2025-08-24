@@ -67,9 +67,9 @@
   /* Custom Japanese-inspired design tokens */
   --surface-elevated: 0 0% 9%;
   --surface-subtle: 0 0% 4%;
-  --text-primary: 0 0% 98%;
-  --text-secondary: 0 0% 85%;
-  --text-muted: 0 0% 65%;
+  --text-primary: 0 0% 100%; /* Pure white */
+  --text-secondary: 0 0% 85%; /* Light gray for secondary text */
+  --text-muted: 0 0% 65%; /* Softer gray for muted/disabled text */
 
   /* Gradients */
   --gradient-primary: linear-gradient(

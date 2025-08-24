@@ -4,10 +4,20 @@ import { Toolbar } from '../components/Toolbar.tsx'
 import Layout from '../layouts/Layout.astro'
 import '../styles/global.css'
 import HeroSection from '@/components/HeroSection.astro'
+import About from '@/components/About.astro'
+import WorkExperience from '@/components/WorkExperience.astro'
+import SkillSection from '@/components/SkillSection.astro'
+import ProjectSection from '@/components/ProjectSection.astro'
+import ContactSection from '@/components/ContactSection.astro'
 ---
 
 <Layout>
   <LangSelector client:load />
   <Toolbar client:load />
   <HeroSection />
+  <About />
+  <WorkExperience />
+  <SkillSection />
+  <ProjectSection />
+  <ContactSection />
 </Layout>

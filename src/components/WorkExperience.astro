@@ -1,0 +1,240 @@
+---
+import { ExternalLink, Calendar, MapPin } from '@lucide/astro'
+import { Card } from './ui/card'
+
+const experiences = [
+  {
+    title: 'Full Stack Developer',
+    company: 'MapVX',
+    company_website: 'https://www.mapvx.com',
+    location: 'Santiago, CL - Remote',
+    period: '2023 - Present',
+    description: `
+    Full Stack Developer at MapVX, with a primary focus on front-end development. 
+    Implement user-centric interfaces using Angular, develop and integrate back-end components with Node.js and Firebase to support dynamic data needs and metrics tracking. 
+    Collaborate with cross-functional teams to deliver seamless, high-quality software solutions, while continuously enhancing the platform’s functionality and user engagement.`,
+    achievements: [
+      'Developed and maintained web platforms using Angular, Node.js, Express, TypeScript, TypeORM, and WordPress.',
+      'Designed backend architecture, implemented APIs, and optimized database queries.',
+      'Applied WCAG accessibility standards to user-facing features.',
+      'Collaborated in Agile teams to deliver maintainable and performant solutions.',
+    ],
+    technologies: [
+      'Angular',
+      'TypeScript',
+      'Node.js',
+      'Docker',
+      'Firebase',
+      'PostgreSQL',
+      'Express',
+      'TypeORM',
+      'WordPress',
+      'Git',
+      'Jira',
+      'Figma',
+    ],
+  },
+  {
+    title: 'University Teaching Assistant',
+    company_website: 'https://www.uta.cl/index.php/sede-iquique/',
+    company: 'Universidad de Tarapacá',
+    location: 'Iquique, CL - Presential',
+    period: 'Mar 2024 - Dec 2024',
+    description:
+      'Assisted in various courses such as Databases, TICs, and Introduction to Project Formulation. Responsibilities included grading, answering student queries, and supporting practical workshops in robotics, BPMN modeling, and database design.',
+    achievements: [
+      'Supported programming, OOP, and web development courses.',
+      'Guided students in SQL and relational database design.',
+      'Assisted in robotics workshops with hardware and coding support.',
+      'Led and participated in collaborative projects with students.',
+    ],
+    technologies: [
+      'Java',
+      'MySQL',
+      'PostgreSQL',
+      'Arduino',
+      'C/C++',
+      'BPMN',
+      'Bizagi',
+      'SQL',
+    ],
+  },
+  {
+    title: 'Intern, Backend Developer',
+    company_website: 'https://www.mapvx.com',
+    company: 'MapVX',
+    location: 'Santiago, CL - Remote',
+    period: 'Jan 2025 - Feb 2025',
+    description:
+      'Development of RESTful endpoints for web services in a scalable architecture. Focused on handling metadata, relational database integration, and request validation',
+    achievements: [
+      'Apply RESTful principles to design and implement scalable APIs',
+      'Use Node.js and Express to build and deploy APIs services',
+      'Optimized database queries',
+      'Applied clean architecture principles to ensure maintainability and scalability',
+    ],
+    technologies: [
+      'Node.js',
+      'TypeScript',
+      'PostgreSQL',
+      'Docker',
+      'TypeORM',
+      'Express',
+    ],
+  },
+  {
+    title: 'Intern, Frontend Developer',
+    company_website: 'https://www.mapvx.com',
+    company: 'MapVX',
+    location: 'Santiago, CL - Remote',
+    period: 'Jan 2024',
+    description:
+      'Front-End Developer Intern at Lazarillo, responsible for developing a metrics dashboard and working with Firebase database integration. Focused on tracking user and app metrics to support data-driven decision-making.',
+    achievements: [
+      'Develop a metrics dashboard using Angular and TypeScript',
+      'Integrate Firebase for real-time data synchronization and metrics',
+      'Collaborated with UX team to enhance user engagement',
+      'Apply responsive design principles to ensure cross-device compatibility',
+    ],
+    technologies: [
+      'Angular',
+      'TypeScript',
+      'Bootstrap',
+      'Firebase',
+      'Chart.js',
+    ],
+  },
+]
+---
+
+<section
+  id="experience"
+  class="py-20 px-6 bg-cover bg-center bg-no-repeat relative"
+>
+  <div
+    class="max-w-6xl mx-auto transition-all duration-1000 opacity-0 translate-y-10"
+    id="experience-section"
+  >
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Work <span class="text-primary">Experience</span>
+      </h2>
+      <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+    </div>
+
+    <!-- Experience Timeline -->
+    <div class="relative">
+      <!-- Vertical line -->
+      <div
+        class="absolute left-8 top-0 bottom-0 w-0.5 bg-border/30 hidden md:block"
+      >
+      </div>
+
+      <div class="space-y-12">
+        {
+          experiences.map((exp, index) => (
+            <div
+              class="job-section relative transform transition-all duration-700 opacity-0 translate-x-10"
+              style={`transition-delay: ${index * 200}ms`}
+            >
+              {/* <!-- Timeline dot --> */}
+              <div class="absolute left-6 w-4 h-4 bg-primary rounded-full shadow-primary hidden md:block">
+                <div class="absolute inset-0 rounded-full bg-primary animate-pulse-glow opacity-50" />
+              </div>
+
+              {/* <!-- Experience card --> */}
+              <Card className="surface-elevated p-8 ml-0 md:ml-16 rounded-2xl border-border/30 hover:border-primary/30 transition-all duration-300 group">
+                <div class="space-y-6">
+                  {/* <!-- Header --> */}
+                  <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                    <div class="space-y-2">
+                      <h3 class="text-2xl font-bold text-primary group-hover:text-primary/80 transition-colors">
+                        {exp.title}
+                      </h3>
+                      <a
+                        href={exp.company_website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Visit ${exp.company} website`}
+                        class="flex items-center space-x-2 text-secondary-foreground"
+                      >
+                        <ExternalLink class="h-4 w-4" />
+                        <span class="font-semibold">{exp.company}</span>
+                      </a>
+                    </div>
+                    <div class="flex flex-col items-start md:items-end space-y-1 text-sm text-secondary-foreground">
+                      <div class="flex items-center space-x-1">
+                        <Calendar class="h-4 w-4" />
+                        <span>{exp.period}</span>
+                      </div>
+                      <div class="flex items-center space-x-1">
+                        <MapPin class="h-4 w-4" />
+                        <span>{exp.location}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* <!-- Description --> */}
+                  <p class="text-secondary-foreground leading-relaxed">
+                    {exp.description}
+                  </p>
+
+                  {/* <!-- Achievements --> */}
+                  <div class="space-y-3">
+                    <h4 class="font-semibold text-primary">
+                      Key Achievements:
+                    </h4>
+                    <ul class="space-y-2">
+                      {exp.achievements.map((achievement) => (
+                        <li class="flex items-start space-x-3 text-secondary-foreground">
+                          <span class="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                          <span>{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* <!-- Technologies --> */}
+                  <div class="flex flex-wrap gap-2 pt-4 border-t border-border/30">
+                    {exp.technologies.map((tech) => (
+                      <span class="px-3 py-1 bg-secondary/30 text-primary text-sm rounded-full border border-border/30 hover:border-primary/30 transition-colors">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </Card>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const section = document.getElementById('experience-section')
+  const jobSections = document.querySelectorAll('.job-section') // now uses class
+
+  if (section && jobSections.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            section.classList.remove('opacity-0', 'translate-y-10')
+            section.classList.add('opacity-100', 'translate-y-0')
+
+            jobSections.forEach((job) => {
+              job.classList.remove('opacity-0', 'translate-x-10')
+              job.classList.add('opacity-100', 'translate-x-0')
+            })
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    observer.observe(section)
+  }
+</script>
