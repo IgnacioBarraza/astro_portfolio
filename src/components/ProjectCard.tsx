@@ -10,6 +10,7 @@ import {
 } from './ui/carousel'
 import { ExternalLink, Github } from 'lucide-react'
 import Autoplay from 'embla-carousel-autoplay'
+import { translations } from '@/i18n/translations'
 
 interface Project {
   name: Record<string, string>
@@ -21,16 +22,21 @@ interface Project {
   demo_link: string
 }
 
-export const ProjectCards = () => {
+export const ProjectCards = ({ lang }: { lang: string }) => {
   const [projects, setProjects] = useState<Project[]>([])
   const [isVisible, setIsVisible] = useState(false)
+
+  const t = translations[lang as keyof typeof translations].project
 
   useEffect(() => {
     fetch('http://localhost:5000/api/projects')
       .then((res) => res.json())
-      .then((data) => setProjects(data))
+      .then((data) => {
+        console.log(data)
+        setProjects(data)
+      })
       .finally(() => setIsVisible(true))
-  }, [])
+  }, [lang])
 
   return (
     <div className="grid md:grid-cols-2 gap-8">
@@ -59,7 +65,7 @@ export const ProjectCards = () => {
                     <div className="aspect-video relative overflow-hidden">
                       <img
                         src={imageUrl}
-                        alt={`${project.name['en']} screenshot ${
+                        alt={`${project.name[lang]} screenshot ${
                           imageIndex + 1
                         }`}
                         width="400"
@@ -80,7 +86,7 @@ export const ProjectCards = () => {
             <div className="flex items-start justify-between mb-3">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-1">
-                  {project.name['en']}
+                  {project.name[lang]}
                 </h3>
                 <Badge
                   variant="outline"
@@ -93,7 +99,7 @@ export const ProjectCards = () => {
             </div>
 
             <p className="text-secondary-foreground text-sm leading-relaxed mb-4">
-              {project.description['en']}
+              {project.description[lang]}
             </p>
 
             {/* Tech Stack */}
@@ -119,7 +125,7 @@ export const ProjectCards = () => {
                     className="flex items-center justify-center flex-1 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 hover:border-primary hover:scale-105 cursor-pointer rounded-md p-1"
                   >
                     <Github className="w-4 h-4 mr-2" />
-                    Code
+                    {t.code}
                   </a>
                   <a
                     href={project.demo_link}
@@ -127,7 +133,8 @@ export const ProjectCards = () => {
                     className="flex items-center justify-center flex-1 gradient-primary hover:scale-105 transition-transform cursor-pointer rounded-md p-1"
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
+                    {/* Live Demo */}
+                    {t.liveDemo}
                   </a>
                 </>
               ) : (
@@ -135,7 +142,8 @@ export const ProjectCards = () => {
                   variant="destructive"
                   className="text-primary-foreground text-sm"
                 >
-                  Coming Soon...
+                  {/* Coming Soon... */}
+                  {t.comingSoon}
                 </Badge>
               )}
             </div>

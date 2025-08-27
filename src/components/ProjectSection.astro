@@ -1,62 +1,6 @@
 ---
-import { Button } from './ui/button'
 import { ProjectCards } from './ProjectCard'
-
-const projects = [
-  {
-    title: 'Hyōsei',
-    description:
-      'A web-based platform designed to streamline the evaluation process of academic fairs, congresses, and similar events. It enables efficient project assessment, event management, and real-time reporting through a user-friendly interface.',
-    tech: [
-      'Angular',
-      'Node.js',
-      'PostgreSQL',
-      'Tailwind CSS v4',
-      'TypeScript',
-      'Express.js',
-      'TypeORM',
-      'PrimeNG',
-    ],
-    category: 'Full-Stack Web App',
-    images: [
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_schedule.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_footer.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_login.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_signup.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_projects.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_evaluation.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_evaluation_finish.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_evaluated.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_evaluated_project.png',
-      'https://assets.codebynacho.com/portfolio/hyosei/hyosei_categories.png',
-    ],
-  },
-  {
-    title: 'TaskFlow AI',
-    description:
-      'An intelligent project management tool powered by machine learning that automatically prioritizes tasks and optimizes team workflows based on historical data.',
-    tech: ['Next.js', 'Python', 'TensorFlow', 'MongoDB', 'Docker'],
-    category: 'AI/ML Platform',
-    images: ['🤖'],
-  },
-  {
-    title: 'MindfulSpace',
-    description:
-      'A minimalist meditation and mindfulness mobile app featuring binaural beats, progress tracking, and personalized meditation recommendations.',
-    tech: ['React Native', 'Firebase', 'Redux', 'Node.js'],
-    category: 'Mobile Application',
-    images: ['🧘‍♂️'],
-  },
-  {
-    title: 'CodeCollab',
-    description:
-      'A real-time collaborative code editor with integrated video chat, syntax highlighting, and version control for remote pair programming sessions.',
-    tech: ['Socket.io', 'Monaco Editor', 'WebRTC', 'Express', 'Redis'],
-    category: 'Developer Tool',
-    images: ['👨‍💻'],
-  },
-]
+const { lang } = Astro.props
 ---
 
 <section
@@ -82,12 +26,14 @@ const projects = [
       </div>
 
       <!-- Projects Grid -->
-      <ProjectCards client:load />
+      <ProjectCards client:load lang={lang} />
 
       <!-- More Projects CTA -->
       <div class="text-center mt-12">
         <a
           href="https://github.com/IgnacioBarraza"
+          target="_blank"
+          rel="noopener noreferrer"
           class="px-8 py-6 text-lg font-medium rounded-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 border-2"
         >
           View All Projects on GitHub

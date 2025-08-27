@@ -1,0 +1,27 @@
+---
+import { Toolbar } from '@/components/Toolbar.tsx'
+import Layout from '@/layouts/Layout.astro'
+import '@/styles/global.css'
+import HeroSection from '@/components/HeroSection.astro'
+import About from '@/components/About.astro'
+import WorkExperience from '@/components/WorkExperience.astro'
+import SkillSection from '@/components/SkillSection.astro'
+import ProjectSection from '@/components/ProjectSection.astro'
+import ContactSection from '@/components/ContactSection.astro'
+import LangSelector from '@/components/LangSelector.astro'
+import { translations } from '../../i18n/translations'
+
+const t = translations.ja
+const lang = Astro.currentLocale
+---
+
+<Layout>
+  <LangSelector />
+  <Toolbar client:load t={t.nav} />
+  <HeroSection />
+  <About />
+  <WorkExperience />
+  <SkillSection />
+  <ProjectSection lang={lang} />
+  <ContactSection />
+</Layout>

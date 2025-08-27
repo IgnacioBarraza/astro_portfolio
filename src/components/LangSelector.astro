@@ -1,0 +1,54 @@
+---
+import { Globe } from '@lucide/astro'
+
+const languages = [
+  { code: 'en', label: 'English' },
+  { code: 'ja', label: '日本語' },
+  { code: 'es', label: 'Español' },
+]
+
+// current locale comes from Astro i18n context
+const currentLang = Astro.currentLocale
+const currentPath = Astro.url.pathname
+---
+
+<div class="fixed top-6 right-6 z-40">
+  <div class="surface-elevated rounded-full p-1 shadow-subtle">
+    <div class="flex items-center space-x-1">
+      <Globe class="h-4 w-4 text-primary ml-3" />
+      <div class="flex items-center bg-secondary/30 rounded-full p-1">
+        {
+          languages.map((lang) => {
+            // Replace current locale in path with selected one
+            let newPath = currentPath.replace(/^\/(en|es|ja)/, '/' + lang.code)
+            if (
+              newPath === currentPath &&
+              !currentPath.startsWith('/' + lang.code)
+            ) {
+              newPath = '/' + lang.code + currentPath
+            }
+
+            const isActive = currentLang === lang.code
+            console.log('lang code', lang.code, 'is active', isActive)
+
+            return (
+              <a
+                href={newPath}
+                class={`relative px-3 py-1.5 text-sm font-medium rounded-full transition-all duration-300 ${
+                  isActive
+                    ? 'bg-primary text-white shadow-primary'
+                    : 'text-secondary-foreground hover:text-primary'
+                }`}
+              >
+                {lang.code.toUpperCase()}
+                {isActive && (
+                  <div class="absolute inset-0 rounded-full bg-primary animate-pulse-glow opacity-20" />
+                )}
+              </a>
+            )
+          })
+        }
+      </div>
+    </div>
+  </div>
+</div>

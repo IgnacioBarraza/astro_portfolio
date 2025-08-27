@@ -1,6 +1,7 @@
 ---
 import { ArrowDown, Github, Linkedin, Mail } from '@lucide/astro'
 import { Button } from './ui/button'
+import { CvDownloadModal } from './DownloadCv'
 
 const network = [
   {
@@ -94,12 +95,7 @@ const network = [
         />
       </a>
 
-      <Button
-        variant="outline"
-        className="px-8 py-6 text-lg font-medium rounded-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer"
-      >
-        Download CV
-      </Button>
+      <CvDownloadModal client:load />
     </div>
 
     {/* Social Links */}

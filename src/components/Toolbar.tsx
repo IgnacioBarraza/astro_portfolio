@@ -2,7 +2,17 @@ import { Menu, X } from 'lucide-react'
 import { Button } from './ui/button'
 import { useState, useEffect } from 'react'
 
-export const Toolbar = () => {
+type NavTranslations = {
+  home: string
+  about: string
+  experience: string
+  skills: string
+  projects: string
+  contact: string
+  hire: string
+}
+
+export const Toolbar = ({ t }: { t: NavTranslations }) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -13,12 +23,12 @@ export const Toolbar = () => {
   }, [])
 
   const navItems = [
-    { label: 'Home', href: '#hero' },
-    { label: 'About', href: '#about' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Contact', href: '#contact' },
+    { label: t.home, href: '#hero' },
+    { label: t.about, href: '#about' },
+    { label: t.experience, href: '#experience' },
+    { label: t.skills, href: '#skills' },
+    { label: t.projects, href: '#projects' },
+    { label: t.contact, href: '#contact' },
   ]
 
   const scrollToSection = (href: string) => {
@@ -68,7 +78,7 @@ export const Toolbar = () => {
             size="sm"
             className="gradient-primary rounded-full hover:scale-105 transition-all duration-300 hidden md:flex cursor-pointer"
           >
-            Hire Me
+            {t.hire}
           </Button>
 
           <button
@@ -101,7 +111,7 @@ export const Toolbar = () => {
                   className="gradient-primary w-full py-2 rounded-lg mt-2"
                   size="sm"
                 >
-                  Hire Me
+                  {t.hire}
                 </Button>
               </div>
             </div>
