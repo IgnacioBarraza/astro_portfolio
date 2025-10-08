@@ -19,13 +19,21 @@ const currentPath = Astro.url.pathname
       <div class="flex items-center bg-secondary/30 rounded-full p-1">
         {
           languages.map((lang) => {
-            // Replace current locale in path with selected one
-            let newPath = currentPath.replace(/^\/(en|es|ja)/, '/' + lang.code)
+            let newPath = currentPath
+
+            // Si la URL actual empieza con /en, /es o /ja, los reemplazamos
+            newPath = newPath.replace(
+              /^\/(en|es|ja)/,
+              lang.code === 'en' ? '' : '/' + lang.code
+            )
+
+            // Si no hay prefijo (ej: "/about"), añadimos solo si no es inglés
             if (
               newPath === currentPath &&
               !currentPath.startsWith('/' + lang.code)
             ) {
-              newPath = '/' + lang.code + currentPath
+              newPath =
+                lang.code === 'en' ? currentPath : '/' + lang.code + currentPath
             }
 
             const isActive = currentLang === lang.code
