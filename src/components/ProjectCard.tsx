@@ -88,13 +88,13 @@ export const ProjectCards = ({ lang }: { lang: string }) => {
                 <h3 className="text-xl font-semibold text-primary mb-1">
                   {project.name[lang]}
                 </h3>
-                <Badge
+                {/* <Badge
                   variant="outline"
                   className="text-xs text-muted-foreground border-primary/50"
                 >
                   Full Stack PWA
-                  {/* {project.category} */}
-                </Badge>
+                  {project.category}
+                </Badge> */}
               </div>
             </div>
 
