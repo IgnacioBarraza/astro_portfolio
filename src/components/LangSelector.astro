@@ -3,7 +3,7 @@ import { Globe } from '@lucide/astro'
 
 const languages = [
   { code: 'en', label: 'English' },
-  { code: 'ja', label: '日本語' },
+  // { code: 'ja', label: '日本語' },
   { code: 'es', label: 'Español' },
 ]
 
@@ -37,7 +37,6 @@ const currentPath = Astro.url.pathname
             }
 
             const isActive = currentLang === lang.code
-            console.log('lang code', lang.code, 'is active', isActive)
 
             return (
               <a

@@ -16,7 +16,7 @@ export const CvDownloadModal = () => {
 
   const downloadCV = (language: Language) => {
     const fileName =
-      language === 'en' ? 'General_CV.pdf' : 'CV_AkiraYamamoto_ES.pdf'
+      language === 'en' ? 'CV_Ignacio_EN.pdf' : 'CV_Ignacio_ES.pdf'
     const filePath = `/cv/${fileName}`
 
     // Trigger download

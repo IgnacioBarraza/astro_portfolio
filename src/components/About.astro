@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets'
+import myImage from '../assets/me.jpg'
 import { Card } from './ui/card'
 
 // const stats = [
@@ -35,10 +37,12 @@ import { Card } from './ui/card'
               <div
                 class="absolute inset-0 bg-zinc-900 rounded-md overflow-hidden"
               >
-                <img
-                  src="me.jpeg"
-                  alt="Profile"
-                  class="object-cover w-full h-full"
+                <Image
+                  src={myImage}
+                  alt="Ignacio Barraza"
+                  width={300}
+                  height={300}
+                  class="w-full max-w-[300px] md:max-w-none object-cover"
                 />
               </div>
             </div>
@@ -49,11 +53,12 @@ import { Card } from './ui/card'
             <div class="space-y-4 text-primary-foreground leading-relaxed">
               <p>
                 Full-stack software engineer with 3+ years of experience
-                building scalable web applications and APIs using TypeScript,
-                Angular, Node.js, Express, and TypeORM. Skilled in REST API
-                design, database modeling, and accessibility best practices
-                (WCAG). Quick to adapt to new frameworks such as Next.js, Astro,
-                NestJS, and GraphQL.
+                building scalable web solutions and APIs. I specialize in the
+                TypeScript ecosystem (Angular, Node.js, Express, TypeORM). I
+                master REST API design, efficient database modeling, and focus
+                on accessibility standards (WCAG). My commitment to continuous
+                improvement (Kaizen) allows me to rapidly integrate cutting-edge
+                technologies like Next.js, Astro, NestJS, and GraphQL.
               </p>
               <p>
                 My approach emphasizes well-structured architectures, such as
