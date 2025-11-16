@@ -1,61 +1,8 @@
 ---
 import { Badge } from './ui/badge'
 import { Card } from './ui/card'
-
-const skillCategories = [
-  {
-    title: 'Frontend',
-    skills: [
-      'Angular',
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Tailwind CSS',
-      'Bootstrap',
-      'Astro',
-    ],
-  },
-  {
-    title: 'Backend',
-    skills: [
-      'Node.js',
-      'TypeORM',
-      'Express',
-      'Firebase',
-      'PostgreSQL',
-      'MongoDB',
-    ],
-  },
-  {
-    title: 'Tools & DevOps',
-    skills: ['Git', 'Jest', 'Figma', 'Linux', 'Docker', 'CI/CD', 'Nginx'],
-  },
-  {
-    title: 'Programming Languages',
-    skills: ['C/C++', 'Javascript', 'TypeScript', 'Java', 'Python'],
-  },
-]
-
-const highligths = [
-  {
-    title: 'Problem Solving',
-    description:
-      'Analytical thinking and creative solutions to complex technical challenges',
-    icon: '🧩',
-  },
-  {
-    title: 'Quick Adaptability',
-    description:
-      'Ability to quickly integrate into new teams and adapt to different workflows and environments',
-    icon: '⚡',
-  },
-  {
-    title: 'Continuous Learning',
-    description:
-      'Always staying updated with the latest technologies and best practices',
-    icon: '📚',
-  },
-]
+import skills from '../data/skills.json'
+import highligths from '../data/highligths.json'
 ---
 
 <section
@@ -82,7 +29,7 @@ const highligths = [
       {/* Skills Grid */}
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {
-          skillCategories.map((category, categoryIndex) => (
+          skills.map((category, categoryIndex) => (
             <Card
               key={category.title}
               className="skill-card surface-elevated p-6 rounded-xl border-border/30 hover:border-primary/30 transition-all duration-700 opacity-0 translate-y-6"

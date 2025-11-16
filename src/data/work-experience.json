@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Full Stack Developer",
+    "company": "MapVX",
+    "company_website": "https://www.mapvx.com",
+    "location": "Santiago, CL - Remote",
+    "period": "Feb 2023 - Present",
+    "description": "Full Stack Developer at MapVX, with a primary focus on front-end development. Implement user-centric interfaces using Angular, develop and integrate back-end components with Node.js and Firebase to support dynamic data needs and metrics tracking. Collaborate with cross-functional teams to deliver seamless, high-quality software solutions, while continuously enhancing the platform’s functionality and user engagement.",
+    "achievements": [
+      "Developed and maintained web platforms using Angular, Node.js, Express, TypeScript, TypeORM, and WordPress.",
+      "Designed backend architecture, implemented APIs, and optimized database queries.",
+      "Applied WCAG accessibility standards to user-facing features.",
+      "Collaborated in Agile teams to deliver maintainable and performant solutions."
+    ],
+    "technologies": [
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "Docker",
+      "Firebase",
+      "PostgreSQL",
+      "Express",
+      "TypeORM",
+      "WordPress",
+      "Git",
+      "Jira",
+      "Figma"
+    ]
+  },
+  {
+    "title": "University Teaching Assistant",
+    "company_website": "https://www.uta.cl/index.php/sede-iquique/",
+    "company": "Universidad de Tarapacá",
+    "location": "Iquique, CL - Presential",
+    "period": "Mar 2024 - Dec 2024",
+    "description": "Assisted in various courses such as Databases, TICs, and Introduction to Project Formulation. Responsibilities included grading, answering student queries, and supporting practical workshops in robotics, BPMN modeling, and database design.",
+    "achievements": [
+      "Supported programming, OOP, and web development courses.",
+      "Guided students in SQL and relational database design.",
+      "Assisted in robotics workshops with hardware and coding support.",
+      "Led and participated in collaborative projects with students."
+    ],
+    "technologies": [
+      "Java",
+      "MySQL",
+      "PostgreSQL",
+      "Arduino",
+      "C/C++",
+      "BPMN",
+      "Bizagi",
+      "SQL"
+    ]
+  },
+  {
+    "title": "Intern, Backend Developer",
+    "company_website": "https://www.mapvx.com",
+    "company": "MapVX",
+    "location": "Santiago, CL - Remote",
+    "period": "Jan 2025 - Feb 2025",
+    "description": "Development of RESTful endpoints for web services in a scalable architecture. Focused on handling metadata, relational database integration, and request validation",
+    "achievements": [
+      "Apply RESTful principles to design and implement scalable APIs",
+      "Use Node.js and Express to build and deploy APIs services",
+      "Optimized database queries",
+      "Applied clean architecture principles to ensure maintainability and scalability"
+    ],
+    "technologies": [
+      "Node.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+      "TypeORM",
+      "Express"
+    ]
+  },
+  {
+    "title": "Intern, Frontend Developer",
+    "company_website": "https://www.mapvx.com",
+    "company": "MapVX",
+    "location": "Santiago, CL - Remote",
+    "period": "Jan 2024",
+    "description": "Front-End Developer Intern at Lazarillo, responsible for developing a metrics dashboard and working with Firebase database integration. Focused on tracking user and app metrics to support data-driven decision-making.",
+    "achievements": [
+      "Develop a metrics dashboard using Angular and TypeScript",
+      "Integrate Firebase for real-time data synchronization and metrics",
+      "Collaborated with UX team to enhance user engagement",
+      "Apply responsive design principles to ensure cross-device compatibility"
+    ],
+    "technologies": [
+      "Angular",
+      "TypeScript",
+      "Bootstrap",
+      "Firebase",
+      "Chart.js"
+    ]
+  }
+]
