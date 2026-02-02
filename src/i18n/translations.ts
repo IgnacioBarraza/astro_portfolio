@@ -9,6 +9,13 @@ export const translations = {
       contact: 'Contact',
       hire: 'Hire Me',
     },
+    hero: {
+      greetings: 'Hello',
+      description:
+        'Crafting digital experiences with precision and elegance. Building modern web applications with a focus on performance and design.',
+      work: 'View my work',
+      cv: 'Download CV',
+    },
     project: {
       code: 'Code',
       liveDemo: 'Live Demo',
@@ -29,22 +36,6 @@ export const translations = {
       code: 'Código',
       liveDemo: 'Demo en vivo',
       comingSoon: 'Próximamente...',
-    },
-  },
-  ja: {
-    nav: {
-      home: 'ホーム',
-      about: '自己紹介',
-      experience: '経歴',
-      skills: 'スキル',
-      projects: 'プロジェクト',
-      contact: '連絡先',
-      hire: '依頼する',
-    },
-    project: {
-      code: 'コード',
-      liveDemo: 'ライブデモ',
-      comingSoon: '近日公開...',
     },
   },
 }

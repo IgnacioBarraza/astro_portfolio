@@ -55,7 +55,7 @@ export const CvDownloadModal = () => {
             <div className="text-left">
               <div className="font-medium">English Version</div>
               <div className="text-sm text-muted-foreground">
-                CV_AkiraYamamoto_EN.pdf
+                CV_Ignacio_EN.pdf
               </div>
             </div>
           </Button>
@@ -69,7 +69,7 @@ export const CvDownloadModal = () => {
             <div className="text-left">
               <div className="font-medium">Spanish Version</div>
               <div className="text-sm text-muted-foreground">
-                CV_AkiraYamamoto_ES.pdf
+                CV_Ignacio_ES.pdf
               </div>
             </div>
           </Button>
