@@ -8,11 +8,13 @@ import {
 } from './ui/dialog'
 import { Button } from './ui/button'
 import { Download } from 'lucide-react'
+import { getTranslations } from '@/i18n/utils'
 
 type Language = 'en' | 'es'
 
-export const CvDownloadModal = () => {
+export const CvDownloadModal = ({ lang }: { lang: string }) => {
   const [isCvModalOpen, setIsCvModalOpen] = useState(false)
+  const t = getTranslations(lang as Language)
 
   const downloadCV = (language: Language) => {
     const fileName =
@@ -35,14 +37,14 @@ export const CvDownloadModal = () => {
           variant="outline"
           className="px-8 py-6 text-lg font-medium rounded-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 cursor-pointer"
         >
-          Download CV
+          {t.hero.cv}
           <Download className="h-5 w-5" />
         </Button>
       </DialogTrigger>
 
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Choose CV Language</DialogTitle>
+          <DialogTitle>{t.hero.downloadCv}</DialogTitle>
         </DialogHeader>
 
         <div className="flex flex-col gap-4 pt-4">
@@ -53,7 +55,7 @@ export const CvDownloadModal = () => {
           >
             <span className="text-2xl">🇺🇸</span>
             <div className="text-left">
-              <div className="font-medium">English Version</div>
+              <div className="font-medium">{t.hero.cvLang.en}</div>
               <div className="text-sm text-muted-foreground">
                 CV_Ignacio_EN.pdf
               </div>
@@ -67,7 +69,7 @@ export const CvDownloadModal = () => {
           >
             <span className="text-2xl">🇪🇸</span>
             <div className="text-left">
-              <div className="font-medium">Spanish Version</div>
+              <div className="font-medium">{t.hero.cvLang.es}</div>
               <div className="text-sm text-muted-foreground">
                 CV_Ignacio_ES.pdf
               </div>

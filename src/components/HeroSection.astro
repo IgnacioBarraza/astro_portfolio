@@ -1,8 +1,10 @@
 ---
 import { ArrowDown, Github, Linkedin, Mail } from '@lucide/astro'
 import { CvDownloadModal } from './DownloadCv'
+import { getLangFromUrl, getTranslations } from '@/i18n/utils'
 
-const currentLang = Astro.currentLocale || 'en'
+const currentLang = getLangFromUrl(Astro.url)
+const t = getTranslations(currentLang)
 
 const network = [
   {
@@ -61,7 +63,7 @@ const network = [
       <span class="text-primary text-lg font-medium tracking-wider"
         >こんにちは</span
       >
-      <span class="text-foreground ml-2">Hello</span>
+      <span class="text-foreground ml-2">{t.hero.greetings}</span>
     </div>
 
     <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
@@ -74,8 +76,7 @@ const network = [
         Software Engineer
       </p>
       <p class="text-primary-foreground max-w-2xl mx-auto leading-relaxed">
-        Crafting digital experiences with precision and elegance. Building
-        modern web applications with a focus on performance and design.
+        {t.hero.description}
       </p>
     </div>
 
@@ -84,13 +85,13 @@ const network = [
         href="#projects"
         class="flex items-center justify-center group gradient-primary px-4 py-2 text-lg font-medium rounded-full hover:scale-105 transition-all duration-300 glow-hover cursor-pointer"
       >
-        View My Work
+        {t.hero.work}
         <ArrowDown
           class="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform"
         />
       </a>
 
-      <CvDownloadModal client:load />
+      <CvDownloadModal client:load lang={currentLang} />
     </div>
 
     <div class="flex justify-center space-x-6">

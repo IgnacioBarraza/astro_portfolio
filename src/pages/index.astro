@@ -18,7 +18,7 @@ const lang = Astro.currentLocale
 <Layout>
   <LangSelector />
   <Toolbar client:load t={t.nav} />
-  <HeroSection />
+  <HeroSection lang={lang} />
   <About />
   <WorkExperience />
   <SkillSection />
