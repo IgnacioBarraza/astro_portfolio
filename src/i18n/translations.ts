@@ -235,7 +235,7 @@ export const translations = {
     workExperience: {
       title: 'Experiencia ',
       title2: 'Laboral',
-      achievements: 'Key Achievements',
+      achievements: 'Principales Logros',
       jobs: [
         {
           title: 'Full Stack Developer',
