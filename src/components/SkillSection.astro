@@ -1,8 +1,12 @@
 ---
 import { Badge } from './ui/badge'
 import { Card } from './ui/card'
-import skills from '../data/skills.json'
-import highligths from '../data/highligths.json'
+import { getLangFromUrl, getTranslations } from '@/i18n/utils'
+
+const currentLang = getLangFromUrl(Astro.url)
+const t = getTranslations(currentLang)
+const skills = t.skill.skills
+const highlights = t.skill.highlights
 ---
 
 <section
@@ -17,12 +21,11 @@ import highligths from '../data/highligths.json'
       {/* Section Header */}
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold mb-4">
-          <span class="text-primary">Skills</span> & Technologies
+          <span class="text-primary">{t.skill.title}</span>{t.skill.title2}
         </h2>
         <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         <p class="text-secondary-foreground mt-6 max-w-2xl mx-auto">
-          A comprehensive toolkit built through years of hands-on experience and
-          continuous learning in the ever-evolving tech landscape.
+          {t.skill.subtitle}
         </p>
       </div>
 
@@ -60,7 +63,7 @@ import highligths from '../data/highligths.json'
       {/* Experience Highlights */}
       <div class="mt-16 grid md:grid-cols-3 gap-8">
         {
-          highligths.map((highlight, index) => (
+          highlights.map((highlight, index) => (
             <Card
               key={highlight.title}
               className="highlight-card surface-elevated p-6 rounded-xl border-border/30 text-center hover:border-primary/30 transition-all duration-700 opacity-0 translate-y-6"
@@ -85,7 +88,7 @@ import highligths from '../data/highligths.json'
   document.addEventListener('DOMContentLoaded', () => {
     const section = document.getElementById('skills-content')
     const cards = document.querySelectorAll(
-      '.skill-card, .highlight-card, .skill-badge'
+      '.skill-card, .highlight-card, .skill-badge',
     )
 
     if (section) {
@@ -103,7 +106,7 @@ import highligths from '../data/highligths.json'
             }
           })
         },
-        { threshold: 0.1 }
+        { threshold: 0.1 },
       )
       observer.observe(section)
     }

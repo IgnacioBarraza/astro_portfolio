@@ -171,6 +171,65 @@ export const translations = {
         },
       ],
     },
+    skill: {
+      title: 'Skills',
+      title2: ' & Technologies',
+      subtitle:
+        'A comprehensive toolkit built through years of hands-on experience and continuous learning in the ever-evolving tech landscape.',
+      skills: [
+        {
+          title: 'Frontend',
+          skills: [
+            'Angular',
+            'React',
+            'TypeScript',
+            'Next.js',
+            'Tailwind CSS',
+            'Bootstrap',
+            'Astro',
+          ],
+        },
+        {
+          title: 'Backend',
+          skills: [
+            'Node.js',
+            'TypeORM',
+            'Express',
+            'Firebase',
+            'PostgreSQL',
+            'MongoDB',
+          ],
+        },
+        {
+          title: 'Tools & DevOps',
+          skills: ['Git', 'Jest', 'Linux', 'Docker', 'CI/CD', 'Nginx'],
+        },
+        {
+          title: 'Programming Languages',
+          skills: ['Javascript', 'TypeScript', 'Java', 'Python'],
+        },
+      ],
+      highlights: [
+        {
+          title: 'Problem Solving',
+          description:
+            'Analytical thinking and creative solutions to complex technical challenges',
+          icon: '🧩',
+        },
+        {
+          title: 'Quick Adaptability',
+          description:
+            'Ability to quickly integrate into new teams and adapt to different workflows and environments',
+          icon: '⚡',
+        },
+        {
+          title: 'Continuous Learning',
+          description:
+            'Always staying updated with the latest technologies and best practices',
+          icon: '📚',
+        },
+      ],
+    },
     project: {
       code: 'Code',
       liveDemo: 'Live Demo',
@@ -336,6 +395,65 @@ export const translations = {
             'Firebase',
             'Chart.js',
           ],
+        },
+      ],
+    },
+    skill: {
+      title: 'Habilidades',
+      title2: ' & Tecnologías',
+      subtitle:
+        'Un conjunto de herramientas integral construido a través de años de experiencia práctica y aprendizaje continuo en un ecosistema tecnológico en constante evolución.',
+      skills: [
+        {
+          title: 'Frontend',
+          skills: [
+            'Angular',
+            'React',
+            'TypeScript',
+            'Next.js',
+            'Tailwind CSS',
+            'Bootstrap',
+            'Astro',
+          ],
+        },
+        {
+          title: 'Backend',
+          skills: [
+            'Node.js',
+            'TypeORM',
+            'Express',
+            'Firebase',
+            'PostgreSQL',
+            'MongoDB',
+          ],
+        },
+        {
+          title: 'Herramientas & DevOps',
+          skills: ['Git', 'Jest', 'Linux', 'Docker', 'CI/CD', 'Nginx'],
+        },
+        {
+          title: 'Lenguajes de Programación',
+          skills: ['JavaScript', 'TypeScript', 'Java', 'Python'],
+        },
+      ],
+      highlights: [
+        {
+          title: 'Resolución de Problemas',
+          description:
+            'Pensamiento analítico y soluciones creativas para desafíos técnicos complejos',
+          icon: '🧩',
+        },
+        {
+          title: 'Adaptabilidad Rápida',
+          description:
+            'Capacidad para integrarme rápidamente en nuevos equipos y adaptarme a distintos flujos de trabajo y entornos',
+          icon: '⚡',
+        },
+        {
+          title: 'Aprendizaje Continuo',
+          description:
+            'Mantenerme siempre actualizado con las últimas tecnologías y buenas prácticas',
+          icon: '📚',
         },
       ],
     },
