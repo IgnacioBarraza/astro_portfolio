@@ -1,6 +1,10 @@
 ---
+import { getLangFromUrl, getTranslations } from '@/i18n/utils'
 import { ProjectCards } from './ProjectCard'
 const { lang } = Astro.props
+
+const currentLang = getLangFromUrl(Astro.url)
+const t = getTranslations(currentLang)
 ---
 
 <section
@@ -15,13 +19,11 @@ const { lang } = Astro.props
       <!-- Section Header -->
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold mb-4">
-          Featured <span class="text-primary">Projects</span>
+          {t.project.title}<span class="text-primary">{t.project.title2}</span>
         </h2>
         <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         <p class="text-secondary-foreground mt-6 max-w-2xl mx-auto">
-          A selection of projects that showcase my technical skills,
-          problem-solving abilities, and passion for creating impactful
-          solutions.
+          {t.project.subtitle}
         </p>
       </div>
 
@@ -36,7 +38,7 @@ const { lang } = Astro.props
           rel="noopener noreferrer"
           class="px-8 py-6 text-lg font-medium rounded-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 border-2"
         >
-          View All Projects on GitHub
+          {t.project.github}
         </a>
       </div>
     </div>
@@ -62,7 +64,7 @@ const { lang } = Astro.props
             }
           })
         },
-        { threshold: 0.3 }
+        { threshold: 0.3 },
       )
 
       observer.observe(section)

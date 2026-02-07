@@ -231,6 +231,11 @@ export const translations = {
       ],
     },
     project: {
+      title: 'Featured ',
+      title2: 'Projects',
+      subtitle:
+        'A selection of projects that showcase my technical skills, problem-solving abilities, and passion for creating impactful solutions.',
+      github: 'View All Projects on GitHub',
       code: 'Code',
       liveDemo: 'Live Demo',
       comingSoon: 'Coming Soon...',
@@ -458,6 +463,11 @@ export const translations = {
       ],
     },
     project: {
+      title: 'Proyectos ',
+      title2: 'Destacados',
+      subtitle:
+        'Una selección de proyectos que demuestran mis habilidades técnicas, capacidad de resolución de problemas y pasión por crear soluciones con impacto.',
+      github: 'Ver todos los proyectos en GitHub',
       code: 'Código',
       liveDemo: 'Demo en vivo',
       comingSoon: 'Próximamente...',
