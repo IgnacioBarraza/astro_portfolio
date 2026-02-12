@@ -16,27 +16,22 @@ interface Project {
   name: Record<string, string>
   description: Record<string, string>
   tags: string[]
-  // category: string
+  category: string
   images_url: string[]
   code_link: string
   demo_link: string
 }
 
-export const ProjectCards = ({ lang }: { lang: string }) => {
-  const [projects, setProjects] = useState<Project[]>([])
+export const ProjectCards = ({
+  lang,
+  projects,
+}: {
+  lang: string
+  projects: Project[]
+}) => {
   const [isVisible, setIsVisible] = useState(false)
 
   const t = translations[lang as keyof typeof translations].project
-
-  useEffect(() => {
-    fetch('http://localhost:5000/api/projects')
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data)
-        setProjects(data)
-      })
-      .finally(() => setIsVisible(true))
-  }, [lang])
 
   return (
     <div className="grid md:grid-cols-2 gap-8">
@@ -88,13 +83,12 @@ export const ProjectCards = ({ lang }: { lang: string }) => {
                 <h3 className="text-xl font-semibold text-primary mb-1">
                   {project.name[lang]}
                 </h3>
-                {/* <Badge
+                <Badge
                   variant="outline"
                   className="text-xs text-muted-foreground border-primary/50"
                 >
-                  Full Stack PWA
                   {project.category}
-                </Badge> */}
+                </Badge>
               </div>
             </div>
 

@@ -236,6 +236,38 @@ export const translations = {
       subtitle:
         'A selection of projects that showcase my technical skills, problem-solving abilities, and passion for creating impactful solutions.',
       github: 'View All Projects on GitHub',
+      projects: [
+        {
+          name: {
+            es: 'Hyōsei – Plataforma de Evaluación Académica',
+            en: 'Hyōsei – Academic Evaluation Platform',
+          },
+          description: {
+            es: 'Hyōsei es una plataforma web full stack diseñada para gestionar procesos de evaluación en eventos académicos como ferias científicas, congresos y proyectos universitarios. Permite a organizadores definir escalas personalizadas, formularios dinámicos y flujos de evaluación multi-rol. El sistema fue construido con un enfoque en arquitectura limpia y modular, priorizando escalabilidad, mantenibilidad y claridad en la lógica de negocio. Incluye control de acceso basado en roles, modelado relacional optimizado y diseño de APIs REST estructuradas.',
+            en: 'Hyōsei is a full stack web platform designed to manage evaluation workflows for academic events such as science fairs, conferences, and university project assessments. It enables organizers to define custom evaluation scales, dynamic forms, and multi-role review flows. The system was built following clean and modular architectural principles, prioritizing scalability, maintainability, and clear business logic boundaries. It includes role-based access control, optimized relational data modeling, and well-structured REST API design.',
+          },
+          tags: [
+            'Angular',
+            'TypeScript',
+            'Node.js',
+            'Express',
+            'TypeORM',
+            'PostgreSQL',
+            'Docker',
+            'REST API',
+            'Hexagonal Architecture',
+          ],
+          category: 'Full Stack',
+          images_url: [
+            '/projects/hyosei/dashboard.png',
+            '/projects/hyosei/evaluation-form.png',
+            '/projects/hyosei/admin-panel.png',
+          ],
+          code_link: 'https://github.com/IgnacioBarraza/Hyosei',
+          demo_link:
+            'https://hyosei.codebynacho.com/07114cd63176a7a2c7236b04d8992a3e488a727e/event/54296175-78a4-461b-b1bf-f5514953196d',
+        },
+      ],
       code: 'Code',
       liveDemo: 'Live Demo',
       comingSoon: 'Coming Soon...',
@@ -468,6 +500,38 @@ export const translations = {
       subtitle:
         'Una selección de proyectos que demuestran mis habilidades técnicas, capacidad de resolución de problemas y pasión por crear soluciones con impacto.',
       github: 'Ver todos los proyectos en GitHub',
+      projects: [
+        {
+          name: {
+            es: 'Hyōsei – Plataforma de Evaluación Académica',
+            en: 'Hyōsei – Academic Evaluation Platform',
+          },
+          description: {
+            es: 'Hyōsei es una plataforma web full stack diseñada para gestionar procesos de evaluación en eventos académicos como ferias científicas, congresos y proyectos universitarios. Permite a organizadores definir escalas personalizadas, formularios dinámicos y flujos de evaluación multi-rol. El sistema fue construido con un enfoque en arquitectura limpia y modular, priorizando escalabilidad, mantenibilidad y claridad en la lógica de negocio. Incluye control de acceso basado en roles, modelado relacional optimizado y diseño de APIs REST estructuradas.',
+            en: 'Hyōsei is a full stack web platform designed to manage evaluation workflows for academic events such as science fairs, conferences, and university project assessments. It enables organizers to define custom evaluation scales, dynamic forms, and multi-role review flows. The system was built following clean and modular architectural principles, prioritizing scalability, maintainability, and clear business logic boundaries. It includes role-based access control, optimized relational data modeling, and well-structured REST API design.',
+          },
+          tags: [
+            'Angular',
+            'TypeScript',
+            'Node.js',
+            'Express',
+            'TypeORM',
+            'PostgreSQL',
+            'Docker',
+            'REST API',
+            'Hexagonal Architecture',
+          ],
+          category: 'Full Stack',
+          images_url: [
+            '/projects/hyosei/dashboard.png',
+            '/projects/hyosei/evaluation-form.png',
+            '/projects/hyosei/admin-panel.png',
+          ],
+          code_link: 'https://github.com/IgnacioBarraza/Hyosei',
+          demo_link:
+            'https://hyosei.codebynacho.com/07114cd63176a7a2c7236b04d8992a3e488a727e/event/54296175-78a4-461b-b1bf-f5514953196d',
+        },
+      ],
       code: 'Código',
       liveDemo: 'Demo en vivo',
       comingSoon: 'Próximamente...',
