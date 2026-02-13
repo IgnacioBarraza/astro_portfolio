@@ -111,34 +111,32 @@ export const ProjectCards = ({
 
             {/* Buttons */}
             <div className="flex gap-3">
-              {project.demo_link && project.code_link ? (
-                <>
-                  <a
-                    href={project.code_link}
-                    target="_blank"
-                    className="flex items-center justify-center flex-1 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 hover:border-primary hover:scale-105 cursor-pointer rounded-md p-1"
-                  >
-                    <Github className="w-4 h-4 mr-2" />
-                    {t.code}
-                  </a>
-                  <a
-                    href={project.demo_link}
-                    target="_blank"
-                    className="flex items-center justify-center flex-1 gradient-primary hover:scale-105 transition-transform cursor-pointer rounded-md p-1"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    {/* Live Demo */}
-                    {t.liveDemo}
-                  </a>
-                </>
-              ) : (
-                <Badge
-                  variant="destructive"
-                  className="text-primary-foreground text-sm"
+              {/* Botón de Código: Se muestra si existe code_link */}
+              {project.code_link ? (
+                <a
+                  href={project.code_link}
+                  target="_blank"
+                  className="flex items-center justify-center flex-1 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/30 hover:border-primary hover:scale-105 transition-all cursor-pointer rounded-md p-2 text-sm font-medium"
                 >
-                  {/* Coming Soon... */}
+                  <Github className="w-4 h-4 mr-2" />
+                  {t.code}
+                </a>
+              ) : null}
+
+              {/* Botón de Demo o Coming Soon */}
+              {project.demo_link ? (
+                <a
+                  href={project.demo_link}
+                  target="_blank"
+                  className="flex items-center justify-center flex-1 gradient-primary hover:scale-105 transition-transform cursor-pointer rounded-md p-2 text-sm font-medium text-white"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  {t.liveDemo}
+                </a>
+              ) : (
+                <div className="flex items-center justify-center flex-1 bg-muted/30 text-muted-foreground border border-dashed border-border/50 rounded-md p-2 text-sm italic">
                   {t.comingSoon}
-                </Badge>
+                </div>
               )}
             </div>
           </div>
