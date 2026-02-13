@@ -366,6 +366,11 @@ export const translations = {
       contactMessagePlaceholder:
         'Tell me about your project or just say hello...',
       contactSend: 'Send Message',
+      contactSend2: 'Sending...',
+      contactThank: 'Thanks for reaching out!',
+      contactReceive:
+        'I have received your message correctly. I will get back to you as soon as possible.',
+      contactSendAnother: 'Send another message',
     },
   },
   es: {
@@ -725,6 +730,11 @@ export const translations = {
       contactMessagePlaceholder:
         'Cuéntame sobre tu proyecto o simplemente di hola...',
       contactSend: 'Enviar mensaje',
+      contactSend2: 'Enviando...',
+      contactThank: '¡Gracias por escribir!',
+      contactReceive:
+        'He recibido tu mensaje correctamente. Te responderé lo antes posible.',
+      contactSendAnother: 'Enviar otro mensaje',
     },
   },
 }
