@@ -1,25 +1,28 @@
 ---
 import ContactForm from '@/components/ContactForm'
 import { Card } from '@/components/ui/card'
+import { getLangFromUrl, getTranslations } from '@/i18n/utils'
 import { Mail, MapPin, Linkedin } from 'lucide-react'
 
+const currentLang = getLangFromUrl(Astro.url)
+const t = getTranslations(currentLang)
 const contactInfo = [
   {
     icon: Mail,
-    label: 'Email',
+    label: t.contact.labels.email,
     value: 'ignacio.barraza.rioja@gmail.com',
     href: 'mailto:ignacio.barraza.rioja@gmail.com',
   },
   {
     icon: MapPin,
-    label: 'Location',
-    value: 'Iquique, Chile - Available for relocation from March 2026',
+    label: t.contact.labels.location,
+    value: t.contact.values.location,
     href: '',
   },
   {
     icon: Linkedin,
-    label: 'LinkedIn',
-    value: 'Check my LinkedIn profile',
+    label: t.contact.labels.linkedin,
+    value: t.contact.values.linkedin,
     href: 'https://www.linkedin.com/in/ignacio-barraza-rioja/',
   },
 ]
@@ -33,13 +36,11 @@ const contactInfo = [
     <!-- Section Header -->
     <div class="text-center mb-16">
       <h2 class="text-4xl md:text-5xl font-bold mb-4">
-        Let's <span class="text-primary">Connect</span>
+        {t.contact.title}<span class="text-primary">{t.contact.title2}</span>
       </h2>
       <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
       <p class="text-muted-foreground mt-6 max-w-2xl mx-auto">
-        Ready to bring your ideas to life? I'm always excited to discuss new
-        opportunities and innovative projects. Let's create something amazing
-        together.
+        {t.contact.subtitle}
       </p>
     </div>
 
@@ -47,11 +48,11 @@ const contactInfo = [
       <!-- Contact Info -->
       <div class="space-y-8">
         <div>
-          <h3 class="text-2xl font-semibold text-primary mb-6">Get in Touch</h3>
+          <h3 class="text-2xl font-semibold text-primary mb-6">
+            {t.contact.getInTouch}
+          </h3>
           <p class="text-secondary-foreground leading-relaxed mb-8">
-            Whether you have a project in mind, want to collaborate, or just
-            want to say hello, I'd love to hear from you. I typically respond
-            within 24 hours.
+            {t.contact.subtitle2}
           </p>
         </div>
 
@@ -79,7 +80,7 @@ const contactInfo = [
         <!-- Quote -->
         <Card className="surface-elevated p-6 border-border/30">
           <blockquote class="text-secondary-foreground italic">
-            "The best way to predict the future is to create it."
+            {t.contact.quote}
           </blockquote>
           <cite class="text-muted-foreground text-sm mt-2 block"
             >— Peter Drucker</cite

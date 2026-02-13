@@ -340,6 +340,25 @@ export const translations = {
       liveDemo: 'Live Demo',
       comingSoon: 'Coming Soon...',
     },
+    contact: {
+      title: "Let's ",
+      title2: 'Connect',
+      subtitle:
+        "Ready to bring your ideas to life? I'm always excited to discuss new opportunities and innovative projects. Let's create something amazing together.",
+      getInTouch: 'Get in Touch',
+      subtitle2:
+        "Whether you have a project in mind, want to collaborate, or just want to say hello, I'd love to hear from you. I typically respond within 24 hours.",
+      quote: '"The best way to predict the future is to create it."',
+      labels: {
+        email: 'Email',
+        location: 'Location',
+        linkedin: 'LinkedIn',
+      },
+      values: {
+        location: 'Iquique, Chile - Available for relocation',
+        linkedin: 'Check my LinkedIn profile',
+      },
+    },
   },
   es: {
     nav: {
@@ -671,6 +690,25 @@ export const translations = {
       code: 'Código',
       liveDemo: 'Demo en vivo',
       comingSoon: 'Próximamente...',
+    },
+    contact: {
+      title: 'Conectemos',
+      title2: '',
+      subtitle:
+        '¿Listo para dar vida a tus ideas? Siempre me entusiasma discutir nuevas oportunidades y proyectos innovadores. Creemos algo increíble juntos.',
+      getInTouch: 'Ponte en contacto',
+      subtitle2:
+        'Ya sea que tengas un proyecto en mente, quieras colaborar o simplemente quieras saludar, me encantaría saber de ti. Normalmente respondo en menos de 24 horas.',
+      quote: '"La mejor manera de predecir el futuro es creándolo."',
+      labels: {
+        email: 'Correo',
+        location: 'Ubicación',
+        linkedin: 'LinkedIn',
+      },
+      values: {
+        location: 'Iquique, Chile - Disponible para reubicación',
+        linkedin: 'Visita mi perfil de LinkedIn',
+      },
     },
   },
 }
