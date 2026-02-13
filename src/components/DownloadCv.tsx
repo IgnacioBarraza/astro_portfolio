@@ -10,7 +10,7 @@ import { Button } from './ui/button'
 import { Download } from 'lucide-react'
 import { getTranslations } from '@/i18n/utils'
 
-type Language = 'en' | 'es'
+export type Language = 'en' | 'es'
 
 export const CvDownloadModal = ({ lang }: { lang: string }) => {
   const [isCvModalOpen, setIsCvModalOpen] = useState(false)

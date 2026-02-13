@@ -358,6 +358,14 @@ export const translations = {
         location: 'Iquique, Chile - Available for relocation',
         linkedin: 'Check my LinkedIn profile',
       },
+      contactName: 'Your Name',
+      contactNamePlaceholder: 'Enter your full name',
+      contactEmail: 'Email Address',
+      contactEmailPlaceholder: 'your.email@example.com',
+      contactMessage: 'Message',
+      contactMessagePlaceholder:
+        'Tell me about your project or just say hello...',
+      contactSend: 'Send Message',
     },
   },
   es: {
@@ -709,6 +717,14 @@ export const translations = {
         location: 'Iquique, Chile - Disponible para reubicación',
         linkedin: 'Visita mi perfil de LinkedIn',
       },
+      contactName: 'Tu nombre',
+      contactNamePlaceholder: 'Ingresa tu nombre completo',
+      contactEmail: 'Correo electrónico',
+      contactEmailPlaceholder: 'tu.correo@ejemplo.com',
+      contactMessage: 'Mensaje',
+      contactMessagePlaceholder:
+        'Cuéntame sobre tu proyecto o simplemente di hola...',
+      contactSend: 'Enviar mensaje',
     },
   },
 }
