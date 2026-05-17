@@ -18,6 +18,7 @@ export const translations = {
     },
     hero: {
       greetings: 'Hello',
+      subTitle: 'Software Engineer',
       description:
         'Crafting digital experiences with precision and elegance. Building modern web applications with a focus on performance and design.',
       work: 'View my work',
@@ -386,6 +387,7 @@ export const translations = {
     },
     hero: {
       greetings: 'Hola',
+      subTitle: 'Ingeniero de Software',
       description:
         'Creando experiencias digitales con precisión y elegancia. Desarrollando aplicaciones web modernas con un enfoque en el rendimiento y el diseño.',
       work: 'Ver mi trabajo',
