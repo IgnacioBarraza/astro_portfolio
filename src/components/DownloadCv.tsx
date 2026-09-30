@@ -4,7 +4,7 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
+  DialogTrigger
 } from './ui/dialog'
 import { Button } from './ui/button'
 import { Download } from 'lucide-react'
@@ -18,7 +18,7 @@ export const CvDownloadModal = ({ lang }: { lang: string }) => {
 
   const downloadCV = (language: Language) => {
     const fileName =
-      language === 'en' ? 'CV_Ignacio_EN.pdf' : 'CV_Ignacio_ES.pdf'
+      language === 'en' ? 'Ignacio_Cv-En.pdf' : 'Ignacio_Cv-Es.pdf'
     const filePath = `/cv/${fileName}`
 
     // Trigger download
