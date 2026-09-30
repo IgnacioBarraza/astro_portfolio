@@ -1,6 +1,6 @@
 export const languages = {
   en: 'English',
-  es: 'Spanish',
+  es: 'Spanish'
 }
 
 export const defaultLang = 'en'
@@ -14,7 +14,7 @@ export const translations = {
       skills: 'Skills',
       projects: 'Projects',
       contact: 'Contact',
-      hire: 'Hire Me',
+      hire: 'Hire Me'
     },
     hero: {
       greetings: 'Hello',
@@ -26,8 +26,8 @@ export const translations = {
       downloadCv: 'Choose CV Language',
       cvLang: {
         en: 'English version',
-        es: 'Spanish version',
-      },
+        es: 'Spanish version'
+      }
     },
     about: {
       title: 'About',
@@ -60,7 +60,7 @@ export const translations = {
       interest1: 'Game Development',
       interest2: 'Japanese Language (Learning)',
       interest3: 'Robotics',
-      interest4: 'Anime & Manga',
+      interest4: 'Anime & Manga'
     },
     workExperience: {
       title: 'Work ',
@@ -81,7 +81,7 @@ export const translations = {
             'Designed and implemented backend services using Node.js, TypeScript, PostgreSQL, and Firebase to support real-time and data-intensive features.',
             'Collaborated with technical leadership and product stakeholders on prioritization, technical estimations, and architectural improvements.',
             'Optimized database queries and data flows, improving platform performance and reliability.',
-            'Worked closely with Customer Success, Product, and Design teams to deliver high-impact solutions.',
+            'Worked closely with Customer Success, Product, and Design teams to deliver high-impact solutions.'
           ],
           technologies: [
             'Angular',
@@ -94,8 +94,8 @@ export const translations = {
             'Docker',
             'Git',
             'Jira',
-            'Figma',
-          ],
+            'Figma'
+          ]
         },
 
         {
@@ -110,7 +110,7 @@ export const translations = {
             'Supported students in programming, OOP, and web development fundamentals.',
             'Guided practical exercises in SQL and relational database design.',
             'Assisted robotics workshops involving hardware integration and low-level programming.',
-            'Participated in and facilitated collaborative academic projects with students.',
+            'Participated in and facilitated collaborative academic projects with students.'
           ],
           technologies: [
             'Java',
@@ -120,8 +120,8 @@ export const translations = {
             'C/C++',
             'BPMN',
             'Bizagi',
-            'SQL',
-          ],
+            'SQL'
+          ]
         },
 
         {
@@ -136,7 +136,7 @@ export const translations = {
             'Designed and implemented RESTful endpoints following best practices.',
             'Developed backend services using Node.js, Express, and TypeScript.',
             'Improved performance through database query optimization.',
-            'Applied clean and layered architecture principles to ensure scalability and maintainability.',
+            'Applied clean and layered architecture principles to ensure scalability and maintainability.'
           ],
           technologies: [
             'Node.js',
@@ -144,8 +144,8 @@ export const translations = {
             'PostgreSQL',
             'Docker',
             'TypeORM',
-            'Express',
-          ],
+            'Express'
+          ]
         },
 
         {
@@ -160,17 +160,17 @@ export const translations = {
             'Developed a metrics dashboard using Angular and TypeScript.',
             'Integrated Firebase to enable real-time data synchronization.',
             'Collaborated with UX designers to improve clarity and user engagement.',
-            'Applied responsive design principles to ensure cross-device compatibility.',
+            'Applied responsive design principles to ensure cross-device compatibility.'
           ],
           technologies: [
             'Angular',
             'TypeScript',
             'Bootstrap',
             'Firebase',
-            'Chart.js',
-          ],
-        },
-      ],
+            'Chart.js'
+          ]
+        }
+      ]
     },
     skill: {
       title: 'Skills',
@@ -187,8 +187,8 @@ export const translations = {
             'Next.js',
             'Tailwind CSS',
             'Bootstrap',
-            'Astro',
-          ],
+            'Astro'
+          ]
         },
         {
           title: 'Backend',
@@ -199,38 +199,38 @@ export const translations = {
             'NestJs',
             'Firebase',
             'PostgreSQL',
-            'MongoDB',
-          ],
+            'MongoDB'
+          ]
         },
         {
           title: 'Tools & DevOps',
-          skills: ['Git', 'Jest', 'Linux', 'Docker', 'CI/CD', 'Nginx'],
+          skills: ['Git', 'Jest', 'Linux', 'Docker', 'CI/CD', 'Nginx']
         },
         {
           title: 'Programming Languages',
-          skills: ['Javascript', 'TypeScript', 'Java', 'Python'],
-        },
+          skills: ['Javascript', 'TypeScript', 'Java', 'Python']
+        }
       ],
       highlights: [
         {
           title: 'Problem Solving',
           description:
             'Analytical thinking and creative solutions to complex technical challenges',
-          icon: '🧩',
+          icon: '🧩'
         },
         {
           title: 'Quick Adaptability',
           description:
             'Ability to quickly integrate into new teams and adapt to different workflows and environments',
-          icon: '⚡',
+          icon: '⚡'
         },
         {
           title: 'Continuous Learning',
           description:
             'Always staying updated with the latest technologies and best practices',
-          icon: '📚',
-        },
-      ],
+          icon: '📚'
+        }
+      ]
     },
     project: {
       title: 'Featured ',
@@ -242,11 +242,11 @@ export const translations = {
         {
           name: {
             es: 'Hyōsei – Plataforma de Evaluación Académica',
-            en: 'Hyōsei – Academic Evaluation Platform',
+            en: 'Hyōsei – Academic Evaluation Platform'
           },
           description: {
             es: 'Hyōsei es una plataforma web full stack diseñada para gestionar procesos de evaluación en eventos académicos como ferias científicas, congresos y proyectos universitarios. Permite a organizadores definir escalas personalizadas, formularios dinámicos y flujos de evaluación multi-rol. El sistema fue construido con un enfoque en arquitectura limpia y modular, priorizando escalabilidad, mantenibilidad y claridad en la lógica de negocio. Incluye control de acceso basado en roles, modelado relacional optimizado y diseño de APIs REST estructuradas.',
-            en: 'Hyōsei is a full stack web platform designed to manage evaluation workflows for academic events such as science fairs, conferences, and university project assessments. It enables organizers to define custom evaluation scales, dynamic forms, and multi-role review flows. The system was built following clean and modular architectural principles, prioritizing scalability, maintainability, and clear business logic boundaries. It includes role-based access control, optimized relational data modeling, and well-structured REST API design.',
+            en: 'Hyōsei is a full stack web platform designed to manage evaluation workflows for academic events such as science fairs, conferences, and university project assessments. It enables organizers to define custom evaluation scales, dynamic forms, and multi-role review flows. The system was built following clean and modular architectural principles, prioritizing scalability, maintainability, and clear business logic boundaries. It includes role-based access control, optimized relational data modeling, and well-structured REST API design.'
           },
           tags: [
             'Angular',
@@ -258,7 +258,7 @@ export const translations = {
             'Docker',
             'REST API',
             'Hexagonal Architecture',
-            'RBAC',
+            'RBAC'
           ],
           category: 'Full Stack',
           images_url: [
@@ -272,54 +272,20 @@ export const translations = {
             'https://assets.codebynacho.com/portfolio/hyosei/hyosei_login.webp',
             'https://assets.codebynacho.com/portfolio/hyosei/hyosei_projects.webp',
             'https://assets.codebynacho.com/portfolio/hyosei/hyosei_schedule.webp',
-            'https://assets.codebynacho.com/portfolio/hyosei/hyosei_signup.webp',
+            'https://assets.codebynacho.com/portfolio/hyosei/hyosei_signup.webp'
           ],
           code_link: 'https://github.com/IgnacioBarraza/Hyosei_showcase',
           demo_link:
-            'https://hyosei.codebynacho.com/07114cd63176a7a2c7236b04d8992a3e488a727e/event/54296175-78a4-461b-b1bf-f5514953196d',
-        },
-        {
-          name: {
-            es: 'Ishin – Aplicación de Registro Médico Personal',
-            en: 'Ishin – Personal Medical Record Application',
-          },
-          description: {
-            es: 'Ishin es una aplicación health-tech mobile-first diseñada para permitir a los usuarios registrar y gestionar información médica personal de manera segura. Incluye registro de medicamentos, alergias, enfermedades de base, signos vitales, historial clínico y citas médicas con notas. Integra un perfil de emergencia accesible mediante código QR para facilitar el acceso rápido a información crítica. Actualmente el frontend está desarrollado con Next.js y el backend se encuentra en fase de diseño, contemplando una arquitectura segura con PostgreSQL, autenticación JWT y cifrado de datos sensibles para garantizar privacidad y protección de la información médica.',
-            en: 'Ishin is a mobile-first health-tech application designed to allow users to securely manage personal medical records. It supports medication tracking, allergy records, chronic conditions, vital signs, medical history, and appointment management with notes. The system includes an emergency profile accessible via QR code to provide rapid access to critical information. The frontend is built with Next.js, while the backend is currently in architectural planning, considering a secure design with PostgreSQL, JWT-based authentication, and encryption of sensitive medical data to ensure privacy and data protection.',
-          },
-          tags: [
-            'Next.js',
-            'TypeScript',
-            'PostgreSQL',
-            'JWT Authentication',
-            'Health-Tech',
-            'Mobile-First',
-            'Data Encryption',
-            'QR Integration',
-            'Full Stack',
-            'System Design',
-          ],
-          category: 'Health-Tech / Full Stack',
-          images_url: [
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_onboarding.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_signin.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_login.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_dashboard.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_profile.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_profile_qr.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_vitals.webp',
-          ],
-          code_link: 'https://github.com/IgnacioBarraza/ishin',
-          demo_link: '',
+            'https://hyosei.codebynacho.com/07114cd63176a7a2c7236b04d8992a3e488a727e/event/54296175-78a4-461b-b1bf-f5514953196d'
         },
         {
           name: {
             es: 'Kōbun – Herramienta de División de PDF',
-            en: 'Kōbun – PDF Splitting Utility',
+            en: 'Kōbun – PDF Splitting Utility'
           },
           description: {
             es: 'Kōbun es una herramienta de escritorio desarrollada en Python con interfaz gráfica basada en Tkinter, diseñada para dividir documentos PDF de forma rápida y eficiente. Permite seleccionar rangos personalizados de páginas, validar entradas del usuario y generar múltiples archivos de salida de manera estructurada. La lógica de procesamiento de documentos está desacoplada de la interfaz para mantener claridad y mantenibilidad del código. El diseño visual está inspirado en el entorno Cinnamon, priorizando simplicidad y usabilidad. Actualmente se encuentra en fase de mejora continua con planes de empaquetado multiplataforma y expansión de funcionalidades.',
-            en: 'Kōbun is a desktop utility built with Python and a Tkinter-based graphical interface, designed to split PDF documents efficiently. It supports custom page range selection, input validation, and structured output file generation. The document-processing logic is decoupled from the UI layer to ensure maintainability and clarity. The visual design is inspired by the Cinnamon desktop environment, focusing on simplicity and usability. The project is currently under iterative improvement, with plans for cross-platform packaging and expanded functionality.',
+            en: 'Kōbun is a desktop utility built with Python and a Tkinter-based graphical interface, designed to split PDF documents efficiently. It supports custom page range selection, input validation, and structured output file generation. The document-processing logic is decoupled from the UI layer to ensure maintainability and clarity. The visual design is inspired by the Cinnamon desktop environment, focusing on simplicity and usability. The project is currently under iterative improvement, with plans for cross-platform packaging and expanded functionality.'
           },
           tags: [
             'Python',
@@ -328,19 +294,26 @@ export const translations = {
             'File System Handling',
             'PDF Processing',
             'Modular Architecture',
-            'UX Design',
+            'UX Design'
           ],
           category: 'Desktop Utility / Tools',
           images_url: [
-            'https://assets.codebynacho.com/portfolio/kobun/kobun_pdf_splitter.webp',
+            'https://assets.codebynacho.com/portfolio/kobun/extract-done-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/extract-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/extract-yozora.png',
+            'https://assets.codebynacho.com/portfolio/kobun/history-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/history-yozora.png',
+            'https://assets.codebynacho.com/portfolio/kobun/split-done-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/split-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/split-yozora.png'
           ],
           code_link: 'https://github.com/IgnacioBarraza/kobun_pdf_splitter',
-          demo_link: '',
-        },
+          demo_link: ''
+        }
       ],
       code: 'Code',
       liveDemo: 'Live Demo',
-      comingSoon: 'Coming Soon...',
+      comingSoon: 'Coming Soon...'
     },
     contact: {
       title: "Let's ",
@@ -354,11 +327,11 @@ export const translations = {
       labels: {
         email: 'Email',
         location: 'Location',
-        linkedin: 'LinkedIn',
+        linkedin: 'LinkedIn'
       },
       values: {
         location: 'Iquique, Chile - Available for relocation',
-        linkedin: 'Check my LinkedIn profile',
+        linkedin: 'Check my LinkedIn profile'
       },
       contactName: 'Your Name',
       contactNamePlaceholder: 'Enter your full name',
@@ -372,8 +345,8 @@ export const translations = {
       contactThank: 'Thanks for reaching out!',
       contactReceive:
         'I have received your message correctly. I will get back to you as soon as possible.',
-      contactSendAnother: 'Send another message',
-    },
+      contactSendAnother: 'Send another message'
+    }
   },
   es: {
     nav: {
@@ -383,7 +356,7 @@ export const translations = {
       skills: 'Habilidades',
       projects: 'Proyectos',
       contact: 'Contacto',
-      hire: 'Contrátame',
+      hire: 'Contrátame'
     },
     hero: {
       greetings: 'Hola',
@@ -395,8 +368,8 @@ export const translations = {
       downloadCv: 'Elije el idioma del CV',
       cvLang: {
         en: 'Version ingles',
-        es: 'Version español',
-      },
+        es: 'Version español'
+      }
     },
     about: {
       title: 'Sobre',
@@ -429,7 +402,7 @@ export const translations = {
       interest1: 'Desarrollo de Videojuegos',
       interest2: 'Idioma Japonés (Aprendizaje)',
       interest3: 'Robótica',
-      interest4: 'Anime y Manga',
+      interest4: 'Anime y Manga'
     },
     workExperience: {
       title: 'Experiencia ',
@@ -450,7 +423,7 @@ export const translations = {
             'Implementé y mantuve servicios backend con Node.js, TypeScript, PostgreSQL y Firebase, soportando procesamiento de datos en tiempo real.',
             'Participé en la definición de prioridades, estimaciones técnicas y mejoras de arquitectura en conjunto con liderazgo técnico y producto.',
             'Optimicé consultas y flujos de datos, mejorando el rendimiento y la estabilidad de la plataforma.',
-            'Colaboré estrechamente con equipos de Customer Success, Producto y Diseño para entregar soluciones de alto impacto.',
+            'Colaboré estrechamente con equipos de Customer Success, Producto y Diseño para entregar soluciones de alto impacto.'
           ],
           technologies: [
             'Angular',
@@ -463,8 +436,8 @@ export const translations = {
             'Docker',
             'Git',
             'Jira',
-            'Figma',
-          ],
+            'Figma'
+          ]
         },
         {
           title: 'Ayudante de Cátedra Universitario',
@@ -478,7 +451,7 @@ export const translations = {
             'Apoyé a estudiantes en fundamentos de programación, POO y desarrollo web.',
             'Guié ejercicios prácticos de SQL y diseño de bases de datos relacionales.',
             'Asistí en talleres de robótica con integración de hardware y programación.',
-            'Participé y facilité proyectos académicos colaborativos con estudiantes.',
+            'Participé y facilité proyectos académicos colaborativos con estudiantes.'
           ],
           technologies: [
             'Java',
@@ -488,8 +461,8 @@ export const translations = {
             'C/C++',
             'BPMN',
             'Bizagi',
-            'SQL',
-          ],
+            'SQL'
+          ]
         },
         {
           title: 'Practicante, Backend Developer',
@@ -503,7 +476,7 @@ export const translations = {
             'Diseñé e implementé endpoints RESTful siguiendo buenas prácticas.',
             'Desarrollé servicios backend utilizando Node.js, Express y TypeScript.',
             'Mejoré el rendimiento mediante la optimización de consultas a base de datos.',
-            'Apliqué principios de arquitectura limpia y en capas para asegurar mantenibilidad y escalabilidad.',
+            'Apliqué principios de arquitectura limpia y en capas para asegurar mantenibilidad y escalabilidad.'
           ],
           technologies: [
             'Node.js',
@@ -511,8 +484,8 @@ export const translations = {
             'PostgreSQL',
             'Docker',
             'TypeORM',
-            'Express',
-          ],
+            'Express'
+          ]
         },
         {
           title: 'Practicante, Frontend Developer',
@@ -526,17 +499,17 @@ export const translations = {
             'Desarrollé un dashboard de métricas utilizando Angular y TypeScript.',
             'Integré Firebase para habilitar sincronización de datos en tiempo real.',
             'Colaboré con el equipo de UX para mejorar la claridad y el engagement del usuario.',
-            'Apliqué principios de diseño responsivo para asegurar compatibilidad entre dispositivos.',
+            'Apliqué principios de diseño responsivo para asegurar compatibilidad entre dispositivos.'
           ],
           technologies: [
             'Angular',
             'TypeScript',
             'Bootstrap',
             'Firebase',
-            'Chart.js',
-          ],
-        },
-      ],
+            'Chart.js'
+          ]
+        }
+      ]
     },
     skill: {
       title: 'Habilidades',
@@ -553,8 +526,8 @@ export const translations = {
             'Next.js',
             'Tailwind CSS',
             'Bootstrap',
-            'Astro',
-          ],
+            'Astro'
+          ]
         },
         {
           title: 'Backend',
@@ -565,38 +538,38 @@ export const translations = {
             'NestJS',
             'Firebase',
             'PostgreSQL',
-            'MongoDB',
-          ],
+            'MongoDB'
+          ]
         },
         {
           title: 'Herramientas & DevOps',
-          skills: ['Git', 'Jest', 'Linux', 'Docker', 'CI/CD', 'Nginx'],
+          skills: ['Git', 'Jest', 'Linux', 'Docker', 'CI/CD', 'Nginx']
         },
         {
           title: 'Lenguajes de Programación',
-          skills: ['JavaScript', 'TypeScript', 'Java', 'Python'],
-        },
+          skills: ['JavaScript', 'TypeScript', 'Java', 'Python']
+        }
       ],
       highlights: [
         {
           title: 'Resolución de Problemas',
           description:
             'Pensamiento analítico y soluciones creativas para desafíos técnicos complejos',
-          icon: '🧩',
+          icon: '🧩'
         },
         {
           title: 'Adaptabilidad Rápida',
           description:
             'Capacidad para integrarme rápidamente en nuevos equipos y adaptarme a distintos flujos de trabajo y entornos',
-          icon: '⚡',
+          icon: '⚡'
         },
         {
           title: 'Aprendizaje Continuo',
           description:
             'Mantenerme siempre actualizado con las últimas tecnologías y buenas prácticas',
-          icon: '📚',
-        },
-      ],
+          icon: '📚'
+        }
+      ]
     },
     project: {
       title: 'Proyectos ',
@@ -608,11 +581,11 @@ export const translations = {
         {
           name: {
             es: 'Hyōsei – Plataforma de Evaluación Académica',
-            en: 'Hyōsei – Academic Evaluation Platform',
+            en: 'Hyōsei – Academic Evaluation Platform'
           },
           description: {
             es: 'Hyōsei es una plataforma web full stack diseñada para gestionar procesos de evaluación en eventos académicos como ferias científicas, congresos y proyectos universitarios. Permite a organizadores definir escalas personalizadas, formularios dinámicos y flujos de evaluación multi-rol. El sistema fue construido con un enfoque en arquitectura limpia y modular, priorizando escalabilidad, mantenibilidad y claridad en la lógica de negocio. Incluye control de acceso basado en roles, modelado relacional optimizado y diseño de APIs REST estructuradas.',
-            en: 'Hyōsei is a full stack web platform designed to manage evaluation workflows for academic events such as science fairs, conferences, and university project assessments. It enables organizers to define custom evaluation scales, dynamic forms, and multi-role review flows. The system was built following clean and modular architectural principles, prioritizing scalability, maintainability, and clear business logic boundaries. It includes role-based access control, optimized relational data modeling, and well-structured REST API design.',
+            en: 'Hyōsei is a full stack web platform designed to manage evaluation workflows for academic events such as science fairs, conferences, and university project assessments. It enables organizers to define custom evaluation scales, dynamic forms, and multi-role review flows. The system was built following clean and modular architectural principles, prioritizing scalability, maintainability, and clear business logic boundaries. It includes role-based access control, optimized relational data modeling, and well-structured REST API design.'
           },
           tags: [
             'Angular',
@@ -624,7 +597,7 @@ export const translations = {
             'Docker',
             'REST API',
             'Hexagonal Architecture',
-            'RBAC',
+            'RBAC'
           ],
           category: 'Full Stack',
           images_url: [
@@ -638,54 +611,20 @@ export const translations = {
             'https://assets.codebynacho.com/portfolio/hyosei/hyosei_login.webp',
             'https://assets.codebynacho.com/portfolio/hyosei/hyosei_projects.webp',
             'https://assets.codebynacho.com/portfolio/hyosei/hyosei_schedule.webp',
-            'https://assets.codebynacho.com/portfolio/hyosei/hyosei_signup.webp',
+            'https://assets.codebynacho.com/portfolio/hyosei/hyosei_signup.webp'
           ],
           code_link: 'https://github.com/IgnacioBarraza/Hyosei_showcase',
           demo_link:
-            'https://hyosei.codebynacho.com/07114cd63176a7a2c7236b04d8992a3e488a727e/event/54296175-78a4-461b-b1bf-f5514953196d',
-        },
-        {
-          name: {
-            es: 'Ishin – Aplicación de Registro Médico Personal',
-            en: 'Ishin – Personal Medical Record Application',
-          },
-          description: {
-            es: 'Ishin es una aplicación health-tech mobile-first diseñada para permitir a los usuarios registrar y gestionar información médica personal de manera segura. Incluye registro de medicamentos, alergias, enfermedades de base, signos vitales, historial clínico y citas médicas con notas. Integra un perfil de emergencia accesible mediante código QR para facilitar el acceso rápido a información crítica. Actualmente el frontend está desarrollado con Next.js y el backend se encuentra en fase de diseño, contemplando una arquitectura segura con PostgreSQL, autenticación JWT y cifrado de datos sensibles para garantizar privacidad y protección de la información médica.',
-            en: 'Ishin is a mobile-first health-tech application designed to allow users to securely manage personal medical records. It supports medication tracking, allergy records, chronic conditions, vital signs, medical history, and appointment management with notes. The system includes an emergency profile accessible via QR code to provide rapid access to critical information. The frontend is built with Next.js, while the backend is currently in architectural planning, considering a secure design with PostgreSQL, JWT-based authentication, and encryption of sensitive medical data to ensure privacy and data protection.',
-          },
-          tags: [
-            'Next.js',
-            'TypeScript',
-            'PostgreSQL',
-            'JWT Authentication',
-            'Health-Tech',
-            'Mobile-First',
-            'Data Encryption',
-            'QR Integration',
-            'Full Stack',
-            'System Design',
-          ],
-          category: 'Health-Tech / Full Stack',
-          images_url: [
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_onboarding.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_signin.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_login.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_dashboard.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_profile.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_profile_qr.webp',
-            'https://assets.codebynacho.com/portfolio/ishin/ishin_vitals.webp',
-          ],
-          code_link: 'https://github.com/IgnacioBarraza/ishin',
-          demo_link: '',
+            'https://hyosei.codebynacho.com/07114cd63176a7a2c7236b04d8992a3e488a727e/event/54296175-78a4-461b-b1bf-f5514953196d'
         },
         {
           name: {
             es: 'Kōbun – Herramienta de División de PDF',
-            en: 'Kōbun – PDF Splitting Utility',
+            en: 'Kōbun – PDF Splitting Utility'
           },
           description: {
             es: 'Kōbun es una herramienta de escritorio desarrollada en Python con interfaz gráfica basada en Tkinter, diseñada para dividir documentos PDF de forma rápida y eficiente. Permite seleccionar rangos personalizados de páginas, validar entradas del usuario y generar múltiples archivos de salida de manera estructurada. La lógica de procesamiento de documentos está desacoplada de la interfaz para mantener claridad y mantenibilidad del código. El diseño visual está inspirado en el entorno Cinnamon, priorizando simplicidad y usabilidad. Actualmente se encuentra en fase de mejora continua con planes de empaquetado multiplataforma y expansión de funcionalidades.',
-            en: 'Kōbun is a desktop utility built with Python and a Tkinter-based graphical interface, designed to split PDF documents efficiently. It supports custom page range selection, input validation, and structured output file generation. The document-processing logic is decoupled from the UI layer to ensure maintainability and clarity. The visual design is inspired by the Cinnamon desktop environment, focusing on simplicity and usability. The project is currently under iterative improvement, with plans for cross-platform packaging and expanded functionality.',
+            en: 'Kōbun is a desktop utility built with Python and a Tkinter-based graphical interface, designed to split PDF documents efficiently. It supports custom page range selection, input validation, and structured output file generation. The document-processing logic is decoupled from the UI layer to ensure maintainability and clarity. The visual design is inspired by the Cinnamon desktop environment, focusing on simplicity and usability. The project is currently under iterative improvement, with plans for cross-platform packaging and expanded functionality.'
           },
           tags: [
             'Python',
@@ -694,19 +633,26 @@ export const translations = {
             'File System Handling',
             'PDF Processing',
             'Modular Architecture',
-            'UX Design',
+            'UX Design'
           ],
           category: 'Desktop Utility / Tools',
           images_url: [
-            'https://assets.codebynacho.com/portfolio/kobun/kobun_pdf_splitter.webp',
+            'https://assets.codebynacho.com/portfolio/kobun/extract-done-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/extract-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/extract-yozora.png',
+            'https://assets.codebynacho.com/portfolio/kobun/history-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/history-yozora.png',
+            'https://assets.codebynacho.com/portfolio/kobun/split-done-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/split-light.png',
+            'https://assets.codebynacho.com/portfolio/kobun/split-yozora.png'
           ],
           code_link: 'https://github.com/IgnacioBarraza/kobun_pdf_splitter',
-          demo_link: '',
-        },
+          demo_link: ''
+        }
       ],
       code: 'Código',
       liveDemo: 'Demo en vivo',
-      comingSoon: 'Próximamente...',
+      comingSoon: 'Próximamente...'
     },
     contact: {
       title: 'Conectemos',
@@ -720,11 +666,11 @@ export const translations = {
       labels: {
         email: 'Correo',
         location: 'Ubicación',
-        linkedin: 'LinkedIn',
+        linkedin: 'LinkedIn'
       },
       values: {
         location: 'Iquique, Chile - Disponible para reubicación',
-        linkedin: 'Visita mi perfil de LinkedIn',
+        linkedin: 'Visita mi perfil de LinkedIn'
       },
       contactName: 'Tu nombre',
       contactNamePlaceholder: 'Ingresa tu nombre completo',
@@ -738,7 +684,7 @@ export const translations = {
       contactThank: '¡Gracias por escribir!',
       contactReceive:
         'He recibido tu mensaje correctamente. Te responderé lo antes posible.',
-      contactSendAnother: 'Enviar otro mensaje',
-    },
-  },
+      contactSendAnother: 'Enviar otro mensaje'
+    }
+  }
 }
